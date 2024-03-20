@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+    <link rel="stylesheet" href="98 styles.css">
+    <script type="text/javascript" src="98 jscaracteres.js">
+        
+    </script>
+</head>
+<body class="ingresar">
+    <p>Ingrese el texto</p>
+    <textarea class="estilo" placeholder="Escribir aquí" id="texto" cols="20", rows="10"></textarea>
+    <div> Caracteres: <span id="contador"></span> </div>
+
+    <script type="text/javascript">
+		function count(){
+			document.getElementById("contador").textContent = document.getElementById("texto").value.length;
+		}
+		
+		document.getElementById("texto").addEventListener("input", count);
+	</script>
+    
+</body>
+</html>
